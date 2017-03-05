@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1217" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="achievementCell" id="gTV-IL-0wX" customClass="AchievementCell" customModule="Swifty_Compagnon" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="400" height="137"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="400" height="137"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TOk-dg-ypm">
+                        <rect key="frame" x="-67" y="3" width="280" height="168"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Cwu-fj-for">
+                                <rect key="frame" x="0.0" y="48" width="400" height="41"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MXr-t1-78W">
+                                        <rect key="frame" x="0.0" y="0.0" width="400" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dr7-Gl-ha9">
+                                        <rect key="frame" x="0.0" y="20.5" width="400" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="TOk-dg-ypm" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="8U4-ZH-ISG"/>
+                <constraint firstItem="TOk-dg-ypm" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" id="XkO-cE-tdG"/>
+                <constraint firstItem="TOk-dg-ypm" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="i7s-DB-n9y"/>
+                <constraint firstItem="TOk-dg-ypm" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="wDS-zx-L1E"/>
+            </constraints>
+            <size key="customSize" width="400" height="137"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="dr7-Gl-ha9" id="Ept-7B-MZk"/>
+                <outlet property="nameLabel" destination="MXr-t1-78W" id="NWe-Va-Ff1"/>
+            </connections>
+            <point key="canvasLocation" x="-8" y="-52.5"/>
+        </collectionViewCell>
+    </objects>
+</document>
